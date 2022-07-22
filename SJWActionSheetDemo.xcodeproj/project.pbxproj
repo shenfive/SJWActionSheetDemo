@@ -13,9 +13,12 @@
 		3B7A6582288A894600D17EB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A6580288A894600D17EB6 /* Main.storyboard */; };
 		3B7A6584288A894A00D17EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A6583288A894A00D17EB6 /* Assets.xcassets */; };
 		3B7A6587288A894A00D17EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A6585288A894A00D17EB6 /* LaunchScreen.storyboard */; };
+		D7364C6701A7EADF08CF21BA /* Pods_SJWActionSheetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D087FE3828B03F321EBC11A5 /* Pods_SJWActionSheetDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FCBCF68B5244C6721C1115A /* Pods-SJWActionSheetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJWActionSheetDemo.debug.xcconfig"; path = "Target Support Files/Pods-SJWActionSheetDemo/Pods-SJWActionSheetDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		171663001F36F85A17CA341A /* Pods-SJWActionSheetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJWActionSheetDemo.release.xcconfig"; path = "Target Support Files/Pods-SJWActionSheetDemo/Pods-SJWActionSheetDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3B7A6577288A894600D17EB6 /* SJWActionSheetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJWActionSheetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7A657A288A894600D17EB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7A657C288A894600D17EB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		3B7A6583288A894A00D17EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7A6586288A894A00D17EB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7A6588288A894A00D17EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D087FE3828B03F321EBC11A5 /* Pods_SJWActionSheetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJWActionSheetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7364C6701A7EADF08CF21BA /* Pods_SJWActionSheetDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D44B03DDF8FD0C9E1128734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D087FE3828B03F321EBC11A5 /* Pods_SJWActionSheetDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B7A656E288A894600D17EB6 = {
 			isa = PBXGroup;
 			children = (
 				3B7A6579288A894600D17EB6 /* SJWActionSheetDemo */,
 				3B7A6578288A894600D17EB6 /* Products */,
+				D65D5FE40830BB1955C6540B /* Pods */,
+				0D44B03DDF8FD0C9E1128734 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = SJWActionSheetDemo;
 			sourceTree = "<group>";
 		};
+		D65D5FE40830BB1955C6540B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FCBCF68B5244C6721C1115A /* Pods-SJWActionSheetDemo.debug.xcconfig */,
+				171663001F36F85A17CA341A /* Pods-SJWActionSheetDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7A658B288A894A00D17EB6 /* Build configuration list for PBXNativeTarget "SJWActionSheetDemo" */;
 			buildPhases = (
+				7A9B3C3EA6EA890A65A7FCF7 /* [CP] Check Pods Manifest.lock */,
 				3B7A6573288A894600D17EB6 /* Sources */,
 				3B7A6574288A894600D17EB6 /* Frameworks */,
 				3B7A6575288A894600D17EB6 /* Resources */,
+				EECA1D3421A4BED973FC57D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A9B3C3EA6EA890A65A7FCF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SJWActionSheetDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECA1D3421A4BED973FC57D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SJWActionSheetDemo/Pods-SJWActionSheetDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SJWActionSheetDemo/Pods-SJWActionSheetDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SJWActionSheetDemo/Pods-SJWActionSheetDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B7A6573288A894600D17EB6 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3B7A658C288A894A00D17EB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCBCF68B5244C6721C1115A /* Pods-SJWActionSheetDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		3B7A658D288A894A00D17EB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171663001F36F85A17CA341A /* Pods-SJWActionSheetDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
